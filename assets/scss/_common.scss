@@ -1,0 +1,39 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: $font-header;
+  font-size: 14px;
+  line-height: 1.5em;
+}
+
+body {
+  width: 100%;
+  max-width: $xl;
+  background-image: url(../img/global-bg.jpg);
+  background-attachment: fixed;
+  background-position: top;
+  margin: 0 auto;
+
+  @include lg-min {
+    padding: 0 $gap;
+  }
+
+  @include lg {
+    padding: 0 $gap/2;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $color-light;
+  font-family: $font-main;
+}
+
+a:hover,
+a:focus {
+  color: $color-accent;
+  background-color: rgba($color: #000000, $alpha: 0.4);
+  border-radius: $gap/6;
+}
