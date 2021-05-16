@@ -1,0 +1,35 @@
+.main {
+    &-content {
+        &__title {
+            margin-top: $gap;
+            color: $color-light;
+            background-color: rgba($color-dark,  0.5);
+            padding: 18px;
+            border-radius: 7px;
+            font-weight: 300;
+            letter-spacing: 1.8px;
+        }
+
+        &__body {
+           // background-color: rgb(124, 124, 82);
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        &-item {
+            &:hover .main-content-item__emersion{
+                top: $gap;
+                color: darkmagenta;
+                background: darkred;
+              }
+
+              @include sm-min {
+                  flex: 0 0 33.333%
+              }
+
+              @include sm-xx {
+                  flex: 0 0 50%;
+              }
+        }
+    }
+}

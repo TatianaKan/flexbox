@@ -1,0 +1,20 @@
+.main {
+  flex-grow: 1;
+  //margin: 0 $gap;
+  order: 2;
+  @include lg-min {
+    flex: 0 0 calc(100% - 220px - 240px);
+    padding-right: $gap;
+    padding-left: $gap;
+  }
+
+  @include lg-md {
+    flex: 0 0 calc(100% - 220px);
+    padding-left: $gap;
+    padding-right: 0;
+  }
+
+  @include md {
+    order: 1;
+  }
+}

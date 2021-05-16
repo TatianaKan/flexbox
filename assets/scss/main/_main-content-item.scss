@@ -1,0 +1,45 @@
+.main {
+  &-content {
+    &-item {
+    //  border: 3px solid darken($color-dark, $amount: 0.5);
+      //height: 100px;
+     // width: auto;
+      padding: 7.5px;
+
+      
+      
+
+      &__element {
+        position: relative;
+        overflow: hidden;
+        border: 5px solid $color-dark;
+        border-radius: 7px;
+
+        
+      }
+
+      &__title {
+        position: absolute;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        height: $gap;
+      }
+
+      &__emersion {
+        position: absolute;
+        top: 210%;
+        height: calc(100% - 27px);
+        margin: 0;
+        padding: $gap/2;
+        a {
+          text-decoration: none;
+        }
+      }
+
+      @include sm-min {
+        flex: 0 0 33.33%;
+      }
+    }
+  }
+}

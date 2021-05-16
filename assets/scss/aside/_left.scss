@@ -1,0 +1,16 @@
+.aside {
+  &-left {
+    flex-grow: 1;
+
+    @include md-min {
+      flex: 0 0 220px;
+      margin-bottom: 15px;
+      order: 1;
+    }
+    @include md-xs {
+      width: 50%;
+      padding-right: $gap/4;
+      order: 2;
+    }
+  }
+}
