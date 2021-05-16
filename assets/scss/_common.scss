@@ -24,14 +24,12 @@ body {
     padding: 0 $gap/2;
   }
 }
-.container{
-display: flex;
+.container {
+  display: flex;
 
-@include lg{
-  flex-wrap: wrap;
- 
-}
-
+  @include lg {
+    flex-wrap: wrap;
+  }
 }
 
 h3 {
@@ -40,6 +38,7 @@ h3 {
 
 p {
   font-family: $font-main;
+  color: $color-gray;
 }
 
 a {
@@ -54,8 +53,7 @@ a:focus {
 }
 
 ul {
- list-style: none;
- 
+  list-style: none;
 }
 
 .fa {
@@ -63,8 +61,6 @@ ul {
   font-size: 0.5rem;
   padding: 5px;
 }
-
-
 
 .img-respons {
   display: block;
@@ -76,6 +72,5 @@ main {
 }
 
 .fa-search {
-  overflow: hidden;
-  // font-size: 1rem;
+  color: $color-light;
 }

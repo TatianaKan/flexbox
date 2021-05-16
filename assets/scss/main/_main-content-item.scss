@@ -1,31 +1,26 @@
 .main {
   &-content {
     &-item {
-    //  border: 3px solid darken($color-dark, $amount: 0.5);
+      //  border: 3px solid darken($color-dark, $amount: 0.5);
       //height: 100px;
-     // width: auto;
+      // width: auto;
       padding: 7.5px;
-
-      
-      
 
       &__element {
         position: relative;
         overflow: hidden;
         border: 5px solid rgba($color-dark, 0.5);
         border-radius: 7px;
-
-        
       }
 
       &__title {
         position: absolute;
         display: block;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
+        // overflow: hidden;
+        // text-overflow: ellipsis;
+        // white-space: nowrap;
         height: $gap;
-        
+
         margin: 0;
         padding: 7px;
         background-color: rgba($color-dark, $alpha: 0.5);
@@ -36,8 +31,11 @@
         letter-spacing: 1px;
         text-align: center;
 
-
-
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        width: 100%;
+        width: 100%;
       }
 
       &__emersion {
@@ -46,14 +44,12 @@
         height: calc(100% - 27px);
         margin: 0;
         padding: $gap/2;
-        a {
-          text-decoration: none;
-        }
+        // a {
+        //   text-decoration: none;
+        // }
 
         transition: top 0.5s;
       }
-
-     
     }
   }
 }
