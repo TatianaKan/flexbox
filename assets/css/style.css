@@ -824,9 +824,9 @@ main {
   transition: color 0.5s;
 }
 
-.widget-news__item a:hover .widget-news__item-text {
+.widget-news__item a:hover .widget-news__item-text p {
   color: #eeeeee;
-  font-weight: 700;
+  font-weight: 300;
 }
 
 .widget-news__item a:hover .widget-news__item-element {
@@ -858,6 +858,7 @@ main {
      text-overflow: ellipsis;
   margin: 0 0 10px;
   font-weight: 300;
+  letter-spacing: 1px;
   white-space: nowrap;
 }
 
@@ -884,8 +885,8 @@ main {
 }
 
 .widget-news__item-text p {
-  line-height: 1.3rem;
-  letter-spacing: 0.5px;
+  color: #cccccc;
+  line-height: 19px;
   font-size: 13px;
 }
 
