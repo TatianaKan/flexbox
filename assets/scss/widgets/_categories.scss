@@ -1,3 +1,28 @@
 .widget {
-    
+  &-category {
+&__list {
+    margin: 0;
+    padding: 0;
+}
+
+
+    &__item {
+      a {
+        width: 100%;
+        display: block;
+        border-radius: 4px;
+        letter-spacing: 0.5px;
+        padding: $gap/6 0;
+        transition: padding-left 0.8s;
+
+        &:hover {
+          color: $color-accent;
+          padding-left: $gap/2;
+          background: rgba($color-dark, 0.5);
+          
+        }
+
+         }
+    }
+  }
 }

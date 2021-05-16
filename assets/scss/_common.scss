@@ -38,8 +38,11 @@ a {
 a:hover,
 a:focus {
   color: $color-accent;
-  
-  
+}
+
+ul {
+ list-style: none;
+ 
 }
 
 .fa {

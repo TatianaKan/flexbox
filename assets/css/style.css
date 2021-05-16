@@ -497,6 +497,10 @@ a:focus {
   color: #e12727;
 }
 
+ul {
+  list-style: none;
+}
+
 .fa {
   color: white;
   font-size: 0.5rem;
@@ -652,6 +656,7 @@ main {
 
 .main-content-item:hover h3 {
   background-color: rgba(0, 0, 0, 0.75);
+  color: #e12727;
 }
 
 .main-content-item {
@@ -721,18 +726,18 @@ main {
   color: #eeeeee;
 }
 
-.widget-search form {
-  position: relative;
-  margin: 15px 0 7px;
-}
-
-.widget-search h3 {
+.widget h3 {
   font-family: "Lora", serif;
   letter-spacing: 1.5px;
   font-weight: 100;
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 5px;
+}
+
+.widget-search form {
+  position: relative;
+  margin: 15px 0 7px;
 }
 
 .widget-search__input {
@@ -768,6 +773,28 @@ main {
   background-color: transparent;
   border: none;
   border-right: 1px solid rgba(238, 238, 238, 0.1);
+}
+
+.widget-category__list {
+  margin: 0;
+  padding: 0;
+}
+
+.widget-category__item a {
+  width: 100%;
+  display: block;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  padding: 5px 0;
+  -webkit-transition: padding-left 0.8s;
+  -o-transition: padding-left 0.8s;
+  transition: padding-left 0.8s;
+}
+
+.widget-category__item a:hover {
+  color: #e12727;
+  padding-left: 15px;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 @media (min-width: 768px) {
