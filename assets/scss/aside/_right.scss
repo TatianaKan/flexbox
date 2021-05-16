@@ -5,14 +5,16 @@
   &-right {
     order: 3;
     flex-grow: 2;
+    
+    @include lg-min {
+      flex: 0 0 240px;
+    }
 
     @include lg-md {
       width: 100%;
     }
 
-    // @include md-min {
-    //   flex: 0 0 240px;
-    // }
+    
 
     @include md-xs {
       width: 50%;

@@ -55,12 +55,14 @@ ul {
   padding: 5px;
 }
 
-.container {
-display: flex;
+// .container{
+// display: flex;
 
-@include lg{
-  flex-wrap: wrap;
-}
+// @include lg{
+//   flex-wrap: wrap;
+ 
+// }
+
 }
 
 .img-respons {
@@ -72,7 +74,7 @@ main {
   display: block;
 }
 
-// .fa-search {
-//   color: $color-dark;
-//   // font-size: 1rem;
-// }
+.fa-search {
+  overflow: hidden;
+  // font-size: 1rem;
+}

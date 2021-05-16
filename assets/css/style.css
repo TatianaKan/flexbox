@@ -527,6 +527,10 @@ main {
   display: block;
 }
 
+.fa-search {
+  overflow: hidden;
+}
+
 .header {
   background-color: rgba(0, 0, 0, 0.5);
   overflow: hidden;
@@ -931,6 +935,11 @@ main {
             flex: 0 0 calc(100% - 220px - 240px);
     padding-right: 30px;
     padding-left: 30px;
+  }
+  .aside-right {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 240px;
+            flex: 0 0 240px;
   }
 }
 
