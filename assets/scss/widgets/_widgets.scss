@@ -13,4 +13,10 @@
         border-bottom: 1px solid rgba($color-dark, 0.3);
         margin-top: $gap/6;
       }
+      p {
+        margin: 0;
+        
+        font-weight: 300;
+        line-height: 2rem;
+      }
 }

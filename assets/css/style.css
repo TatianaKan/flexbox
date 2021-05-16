@@ -486,6 +486,10 @@ h3 {
   color: #eeeeee;
 }
 
+p {
+  font-family: "Roboto", sans-serif;
+}
+
 a {
   text-decoration: none;
   color: #eeeeee;
@@ -733,6 +737,12 @@ main {
   padding-bottom: 10px;
   border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   margin-top: 5px;
+}
+
+.widget p {
+  margin: 0;
+  font-weight: 300;
+  line-height: 2rem;
 }
 
 .widget-search form {
