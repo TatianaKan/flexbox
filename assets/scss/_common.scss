@@ -25,6 +25,10 @@ body {
   }
 }
 
+h3 {
+  color: $color-light;
+}
+
 a {
   text-decoration: none;
   color: $color-light;
@@ -60,3 +64,8 @@ display: flex;
 main {
   display: block;
 }
+
+// .fa-search {
+//   color: $color-dark;
+//   // font-size: 1rem;
+// }
