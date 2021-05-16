@@ -1,6 +1,8 @@
 .widget {
   &-news {
-    
+    @include lg-min {
+      width: 240px;
+    }
 
     &__item {
       a:hover .widget-news__item-title {
@@ -24,6 +26,8 @@
         flex-wrap: wrap;
         margin: 0 (-$gap/2) 7.5px;
         padding: 0 $gap/2 7.5px;
+
+        
         
 
         // a {

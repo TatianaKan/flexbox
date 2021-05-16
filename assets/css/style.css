@@ -482,6 +482,12 @@ body {
   margin: 0 auto;
 }
 
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 h3 {
   color: #eeeeee;
 }
@@ -509,12 +515,6 @@ ul {
   color: white;
   font-size: 0.5rem;
   padding: 5px;
-}
-
-.container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .img-respons {
@@ -940,6 +940,9 @@ main {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 240px;
             flex: 0 0 240px;
+  }
+  .widget-news {
+    width: 240px;
   }
 }
 

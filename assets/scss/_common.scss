@@ -24,6 +24,15 @@ body {
     padding: 0 $gap/2;
   }
 }
+.container{
+display: flex;
+
+@include lg{
+  flex-wrap: wrap;
+ 
+}
+
+}
 
 h3 {
   color: $color-light;
@@ -55,15 +64,7 @@ ul {
   padding: 5px;
 }
 
-// .container{
-// display: flex;
 
-// @include lg{
-//   flex-wrap: wrap;
- 
-// }
-
-}
 
 .img-respons {
   display: block;
