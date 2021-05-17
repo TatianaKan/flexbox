@@ -12,12 +12,17 @@
 
     @include lg-md {
       width: 100%;
+      
     }
-
     @include md-xs {
       width: 50%;
-      padding-left: $gap/4;
-      // margin-left: $gap;
+      padding-left: 7.5px;
+    }
+
+    @include xs {
+      width: 100%;
+      //padding-left: $gap/4;
+      // padding: 0 -7.5px;
     }
   }
 }
