@@ -12,5 +12,12 @@
       padding-right: $gap/4;
       order: 2;
     }
+
+    @include xs {
+      width: 50%;
+      padding-right: $gap/4;
+      order: 3;
+    }
+
   }
 }
