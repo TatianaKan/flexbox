@@ -3,16 +3,14 @@
     form {
       position: relative;
       margin: $gap/2 0 7px;
-      
     }
 
-    
     &__input {
       width: 100%;
       text-overflow: ellipsis;
-      
+
       font-size: 0.85rem;
-      color: $color-gray; 
+      color: $color-gray;
       background: rgba($color-light, $alpha: 0.1);
       padding: 7px 8px 7px 40px;
       border: 1px solid rgba($color-light, 0.1);
@@ -26,8 +24,8 @@
       }
 
       &::-webkit-input-placeholder {
-         color: #cccccc; 
-        }
+        color: #cccccc;
+      }
     }
 
     &__btn {
