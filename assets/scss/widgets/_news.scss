@@ -8,10 +8,10 @@
       a:hover .widget-news__item-title {
         color: $color-accent;
         transition: color 0.5s;
+        text-shadow: 2px 2px 3px $color-dark, 2px 2px 13px $color-dark;
       }
-      a:hover .widget-news__item-text p{
+      a:hover .widget-news__item-text {
         color: $color-light;
-        font-weight: 300;
       }
       a:hover .widget-news__item-element {
         background: radial-gradient(
@@ -63,18 +63,27 @@
       }
 
       &-text {
-        //   display: flex;
+        display: -webkit-box;
+       
         overflow: hidden;
+        //text-overflow: ellipsis;
         width: calc(100% - 75px);
+
         max-height: 75px;
         padding-left: $gap/3;
+        color: $color-gray;
+        line-height: 19px;
+        // letter-spacing: 0.5px;
+        font-size: 13px;
 
-        p {
-          color: $color-gray;
-          line-height: 19px;
-          // letter-spacing: 0.5px;
-          font-size: 13px;
-        }
+        // p {
+        //   color: $color-gray;
+        //   line-height: 19px;
+        //   // letter-spacing: 0.5px;
+        //   font-size: 13px;
+        //   display: -webkit-box;
+
+        // }
       }
     }
   }

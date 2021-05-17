@@ -13,12 +13,29 @@
 
       @include sm-min {
         display: flex;
-        // flex-direction: row;
+        flex-direction: row;
       }
+
+      @include sm {
+        a {
+          margin-top: 0;
+          margin-bottom: 0;
+        }
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: none;
+      }
+      &.active {
+        display: flex;
+        flex-direction: column;
+      }
+
       &-item {
         &.active {
           a {
-            color: $color-accent;
+            color: $color-accent-dark;
+            text-shadow: 2px 2px 3px $color-dark, 2px 2px 9px $color-dark;
             background-color: rgba($color: #000000, $alpha: 0.4);
             border-radius: $gap/6;
           }
@@ -31,11 +48,54 @@
           &:focus {
             border-radius: $gap/6;
             background-color: rgba($color: #000000, $alpha: 0.4);
-            
-              color: $color-accent;
-            
+
+            color: $color-accent;
+            text-shadow: 2px 2px 3px $color-dark, 2px 2px 13px $color-dark;
           }
         }
+      }
+    }
+
+    &__btn {
+      @include sm-min {
+        display: none;
+      }
+
+      @include sm {
+        display: flex;
+      }
+      flex-direction: column;
+      width: 50px;
+      height: 50px;
+      background: rgba($color-dark, 0.2);
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+
+      &.active .header-menu__btn-row:first-child {
+        top: 6px;
+        transform: rotate(45deg);
+      }
+
+      &.active .header-menu__btn-row:last-child {
+        top: -6px;
+        transform: rotate(135deg);
+      }
+
+      &.active .header-menu__btn-row:nth-child(2) {
+        opacity: 0;
+      }
+
+      &-row {
+        display: block;
+        position: relative;
+        width: 60%;
+        height: 2px;
+        margin: 2px 0;
+        border-radius: 4px;
+        background-color: $color-light;
+
+        transition: transform 0.5s;
       }
     }
   }

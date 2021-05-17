@@ -3,6 +3,8 @@
 
   &-top {
     display: flex;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
 
     @include md {
       flex-wrap: wrap;
