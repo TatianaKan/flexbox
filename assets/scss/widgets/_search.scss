@@ -13,19 +13,19 @@
       color: $color-gray;
       background: rgba($color-light, $alpha: 0.1);
       padding: 7px 8px 7px 40px;
-      border: 1px solid rgba($color-light, 0.1);
+      border: 1px solid rgba($color-gray, 0.1);
       border-radius: 4px;
 
       &:focus {
-        color: $color-gray;
+        color: $color-light;
         background: rgba($color-light, 0.2);
         outline: none;
         border-radius: 1px solid rgba($color-light, 0.3);
       }
 
-      &::-webkit-input-placeholder {
-        color: #cccccc;
-      }
+      // &::-webkit-input-placeholder {
+      //   color: #cccccc;
+      // }
     }
 
     &__btn {
@@ -35,7 +35,7 @@
       top: 1px;
       padding: 5px 7px;
       color: $color-gray;
-      background-color: transparent;
+      background: transparent;
       border: none;
       border-right: 1px solid rgba($color-light, 0.1);
     }
